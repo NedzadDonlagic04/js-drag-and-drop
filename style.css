@@ -8,3 +8,70 @@
 html {
     font-size: 16px;
 }
+
+body {
+    min-height: 100vh;
+    background:linear-gradient( hsl(30, 100%, 50%), hsl(40, 100%, 70%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 800px;
+    height: 500px;
+    border: 8px dashed white;
+    border-radius: 5px;
+    position: relative;
+}
+
+h1 {
+    font-size: 3rem;
+    color: white;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.drag-drop-container {
+    margin: 120px auto;
+    width: 90%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.drag-me,
+.drop-box {
+    width: 150px;
+    height: 150px;
+    border: 5px solid white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drag-me {
+    background-color: white;
+}
+
+.drag-me:hover {
+    cursor: pointer;
+}
+
+.drop-box {
+    border: 5px dashed white;
+    border-radius: 5px;
+    background-color: hsla(0, 10%, 30%, .2);
+}
+
+.box-text {
+    font-size: 2rem;
+    color: white;
+    user-select: none;
+}
+
+.drag-me .box-text {
+    color: black
+}
